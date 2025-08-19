@@ -6,6 +6,14 @@ Los ejercicios del Capítulo 1 de Flex & Bison permitieron comprender los concep
 
 Con estas prácticas se aprendió a usar expresiones regulares para definir reglas, manejar tokens con valores y comprender cómo Flex transforma la entrada en tokens que Bison interpreta para darles significado dentro de una gramática.
 
+Como Ejecutar el Codigo
+
+- 1- bison -d calc.y   (genera calc.tab.c y calc.tab.h)
+- 2- flex calc.l   (genera lex.yy.c)
+- 3- gcc calc.tab.c lex.yy.c -o calc -lfl -lm    (comando final de compilación)
+- 4- ./calc  (Inicia la calculadora)
+
+
 ## 1. Análisis del Ejemplo 1-1
 
 - Objetivo del código
